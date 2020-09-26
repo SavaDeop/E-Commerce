@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ECommerc.Entites.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,5 +17,24 @@ namespace ECommerc.DataAccess.Context
             : base(options)
         {
         }
+
+        public DbSet<Products> Product { get; set; }
+        public DbSet<Company> Company { get; set; }
+        public DbSet<Category> Category { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(ConnectionString);
+            }
+        }
+        //partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+
+        //    OnModelCreatingPartial(modelBuilder);
+
+        //}
     }
 }

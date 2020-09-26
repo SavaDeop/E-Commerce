@@ -10,12 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ECommerc.UserInterface\ECommerc.UserInterface.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DataAccess\" />
-    <Folder Include="Entities\Concrete\" />
     <Folder Include="Entities\Abstract\" />
   </ItemGroup>
 

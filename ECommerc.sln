@@ -3,15 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerc.Core", "ECommerc.Core\ECommerc.Core.csproj", "{64128623-087D-48DD-9E2D-381E5939E7E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerc.Core", "ECommerc.Core\ECommerc.Core.csproj", "{64128623-087D-48DD-9E2D-381E5939E7E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerc.Entites", "ECommerc.Entites\ECommerc.Entites.csproj", "{802FCA5E-977D-4305-9932-70A0375B521A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerc.Entites", "ECommerc.Entites\ECommerc.Entites.csproj", "{802FCA5E-977D-4305-9932-70A0375B521A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64128623-087D-48DD-9E2D-381E5939E7E3} = {64128623-087D-48DD-9E2D-381E5939E7E3}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerc.DataAccess", "ECommerc.DataAccess\ECommerc.DataAccess.csproj", "{12206A2D-DF1E-40F2-8889-086D68265614}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerc.DataAccess", "ECommerc.DataAccess\ECommerc.DataAccess.csproj", "{12206A2D-DF1E-40F2-8889-086D68265614}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64128623-087D-48DD-9E2D-381E5939E7E3} = {64128623-087D-48DD-9E2D-381E5939E7E3}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Business", "ECommerce.Business\ECommerce.Business.csproj", "{D108EB2E-4FD9-487D-BD37-E5D2A49E9891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Business", "ECommerce.Business\ECommerce.Business.csproj", "{D108EB2E-4FD9-487D-BD37-E5D2A49E9891}"
+	ProjectSection(ProjectDependencies) = postProject
+		{12206A2D-DF1E-40F2-8889-086D68265614} = {12206A2D-DF1E-40F2-8889-086D68265614}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerc.UserInterface", "ECommerc.UserInterface\ECommerc.UserInterface.csproj", "{00175087-050B-462A-8593-643A893BDB61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerc.UserInterface", "ECommerc.UserInterface\ECommerc.UserInterface.csproj", "{00175087-050B-462A-8593-643A893BDB61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

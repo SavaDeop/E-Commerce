@@ -11,7 +11,11 @@
 
   <ItemGroup>
     <Folder Include="Concrete\" />
-    <Folder Include="Abstract\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECommerc.Core\ECommerc.Core.csproj" />
+    <ProjectReference Include="..\ECommerc.Entites\ECommerc.Entites.csproj" />
   </ItemGroup>
 
 </Project>

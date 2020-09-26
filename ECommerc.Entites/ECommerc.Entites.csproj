@@ -13,4 +13,8 @@
     <Folder Include="Abstract\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ECommerc.Core\ECommerc.Core.csproj" />
+  </ItemGroup>
+
 </Project>
