@@ -8,6 +8,6 @@ namespace ECommerc.DataAccess.Abstract
 {
     public interface ICompanyDal : IEntityRepository<Company>
     {
-
+        public IEnumerable<Company> GetCompanies();
     }
 }

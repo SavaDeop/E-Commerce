@@ -8,5 +8,6 @@ namespace ECommerc.DataAccess.Abstract
 {
     public interface IProductDal : IEntityRepository<Products>
     {
+        public IEnumerable<Products> GetProducts();
     }
 }

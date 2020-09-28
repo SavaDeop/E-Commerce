@@ -9,6 +9,7 @@ namespace ECommerc.Entites.Concrete
     {
         public long Id { get; set; }
         public string Name { get; set; }
+        public string Photo { get; set; }
         public virtual IEnumerable<Products> Products { get; set; }
     }
 }
