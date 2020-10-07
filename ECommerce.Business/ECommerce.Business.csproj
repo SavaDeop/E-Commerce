@@ -14,4 +14,9 @@
     <Folder Include="Concrete\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ECommerc.DataAccess\ECommerc.DataAccess.csproj" />
+    <ProjectReference Include="..\ECommerc.Entites\ECommerc.Entites.csproj" />
+  </ItemGroup>
+
 </Project>

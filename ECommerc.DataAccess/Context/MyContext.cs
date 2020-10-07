@@ -8,7 +8,7 @@ namespace ECommerc.DataAccess.Context
 {
     public class MyContext : DbContext
     {
-        public static string ConnectionString { get; set; }
+        public static string ConnectionString = "Server=(localdb)\\MSSQLLocalDB;Database=ECommerce;Trusted_Connection=true";
         public MyContext()
         {
         }
@@ -29,12 +29,6 @@ namespace ECommerc.DataAccess.Context
                 optionsBuilder.UseSqlServer(ConnectionString);
             }
         }
-        //partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-
-        //    OnModelCreatingPartial(modelBuilder);
-
-        //}
+        
     }
 }

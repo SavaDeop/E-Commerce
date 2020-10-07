@@ -1,0 +1,18 @@
+﻿@model ECommerc.Entites.Concrete.Category
+@{
+    ViewData["Title"] = "Add";
+}
+
+
+<!-- Default form subscription -->
+    <form class="text-center border border-light p-5" method="post" asp-controller="Category" asp-action="Add">
+
+        <!-- Name -->
+        <input type="text" asp-for="Name" id="defaultSubscriptionFormPassword" style="width:25%!important;border:1px solid red !important" class="form-control mb-4" placeholder="CategoryName">
+        @*@Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Kullanıcı Adı" })*@
+        <!-- Sign in button -->
+        <button class="btn btn-info btn-block" style="width:155px!important;background-color:cornflowerblue!important" type="submit">Sign in</button>
+
+
+    </form>
+<!-- Default form subscription -->

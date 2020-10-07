@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ECommerc.DataAccess.Abstract;
+using ECommerc.DataAccess.Concrete.EntityFramework;
 using ECommerc.DataAccess.Context;
+using ECommerce.Business.Abstract;
+using ECommerce.Business.Concrete;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +34,9 @@ namespace ECommerc.UserInterface
             services.AddDbContext<MyContext>
                 (options => options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=ECommerce;Trusted_Connection=true"));
             //services.AddScoped<>();
+
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<ICategoryDal, EfCategoryDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +65,8 @@ namespace ECommerc.UserInterface
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+           
         }
     }
 }

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ECommerc.DataAccess\ECommerc.DataAccess.csproj" />
+    <ProjectReference Include="..\ECommerce.Business\ECommerce.Business.csproj" />
   </ItemGroup>
 
 </Project>
