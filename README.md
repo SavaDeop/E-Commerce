@@ -5,3 +5,5 @@ Practices for asp.net
              -- Basic CRUD and Entity Framework operations added to project.
              
  28.09.2020 E-Commerce bootstrap template has added.
+ 
+ 8.10.2020 First entity adding operation has successed.
